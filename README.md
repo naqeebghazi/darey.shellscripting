@@ -17,7 +17,12 @@ Example script to check if a number entered is positive, negative or zero.
     read -p "Enter as number: " NUM
 
     if [ $NUM -gt 0 ]
-        then 
-            echo 
-
-    
+    then 
+        echo "The number $NUM is greater than 0, a positive number"
+    elif [ $NUM -lt 0 ]
+    then
+        echo "The number $NUM is less than 0, a negative number"
+    elif [ $NUM -eq 0 ]
+    then
+        echo "The number $NUM is equal to 0"
+    fi
