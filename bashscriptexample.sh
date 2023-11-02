@@ -144,6 +144,16 @@
 #     done
 
 
+# Print numbers from 1 to 10:
+
+# for (( i=1; i<=10; i++))
+#     do
+#         echo $i
+#     done
+
+
+
+
 # ##############################################################
 
 
@@ -187,15 +197,26 @@
 # ##############################################################
 
 
-read -p "Enter as number: " NUM
+# read -p "Enter as number: " NUM
 
-if [ $NUM -gt 0 ]
-then 
-    echo "The number $NUM is greater than 0, a positive number"
-elif [ $NUM -lt 0 ]
-then
-    echo "The number $NUM is less than 0, a negative number"
-elif [ $NUM -eq 0 ]
-then
-    echo "The number $NUM is equal to 0"
-fi
+# if [ $NUM -gt 0 ]
+# then 
+#     echo "The number $NUM is greater than 0, a positive number"
+# elif [ $NUM -lt 0 ]
+# then
+#     echo "The number $NUM is less than 0, a negative number"
+# elif [ $NUM -eq 0 ]
+# then
+#     echo "The number $NUM is equal to 0"
+# fi
+
+# ##############################################################
+
+# COMMAND SUB
+
+# current_date=$(date +%d/%m/%Y)
+# echo "Today's date is $current_date"
+
+# current_date=`date +%d/%m/%Y`
+# echo "Today's date is $current_date"
+
