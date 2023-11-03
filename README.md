@@ -87,3 +87,10 @@ Allows you to handle input/output i.e. accept user input and output related text
         echo "Have a graet day $NAME!"
     fi
 
+
+## Define function to greet user:
+
+    greet() {
+        echo "Hello, Mr $1, very nice to meet you!"
+    }
+    greet "Naqeeb"
