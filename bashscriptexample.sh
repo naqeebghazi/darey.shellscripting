@@ -1,6 +1,6 @@
 # !/bin/bash
 
-# echo "Welcome to Linux"
+echo "Welcome to Linux"
 
 # read -p "Enter your name please: " NAME
 
@@ -214,9 +214,74 @@
 
 # COMMAND SUB
 
+# Define function to greet user:
+
+# greet() {
+#     echo "Hello, Mr $1, very nice to meet you!"
+# }
+# greet "Naqeeb"
+
 # current_date=$(date +%d/%m/%Y)
 # echo "Today's date is $current_date"
 
 # current_date=`date +%d/%m/%Y`
 # echo "Today's date is $current_date"
 
+# echo "Enter your name"
+# read name
+
+# echo "hello world" > index.txt
+
+# if [ -f "index.txt" ]
+# then
+#     echo "File index.txt exists"
+# else
+#     echo "No file exixts with that name"
+# fi
+
+# echo "hello world" | grep "pattern"
+
+# echo "pattern in pattern of lots of sqaures" > index.txt
+
+
+# ##############################################################
+
+
+#!/bin/bash
+
+# Display current directory
+echo "Current directory: $PWD"
+
+# Create a new directory
+echo "Creating a new directory..."
+mkdir my_directory
+echo "New directory created."
+
+# Change to the new directory
+echo "Changing to the new directory..."
+cd my_directory
+echo "Current directory: $PWD"
+
+# Create some files
+echo "Creating files..."
+touch file1.txt
+touch file2.txt
+echo "Files created."
+
+# List the files in the current directory
+echo "Files in the current directory:"
+ls
+
+# Move one level up
+echo "Moving one level up..."
+cd ..
+echo "Current directory: $PWD"
+
+# Remove the new directory and its contents
+echo "Removing the new directory..."
+rm -rf my_directory
+echo "Directory removed."
+
+# List the files in the current directory again
+echo "Files in the current directory:"
+ls
