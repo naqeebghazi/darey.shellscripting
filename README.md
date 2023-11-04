@@ -171,3 +171,32 @@ This is what the output looks like:
 
 The output:
 ![numeric](https://github.com/naqeebghazi/darey.shellscripting/blob/main/images/numeric.png?raw=true)
+
+
+## File backup
+
+    # Make backup directory
+    mkdir /Users/nghazi/DevOps/darey.io/darey.shellscripting/shell_BACKUP
+    
+    # Define the source directory and backup directory
+    source_dir="/Users/nghazi/DevOps/darey.io/darey.shellscripting/"
+    backup_dir="/Users/nghazi/DevOps/darey.io/darey.shellscripting/shell_BACKUP"
+    
+    # Create a timestamp with the current date and time
+    timestamp=$(date +"%d%m%Y%H%M%S")
+    
+    # Create a backup directory with the timestamp
+    backup_dir_with_timestamp="$backup_dir/backup_$timestamp"
+    
+    # Create the backup directory
+    mkdir -p "$backup_dir_with_timestamp"
+    
+    # Copy all files from the source directory to the backup directory
+    cp -r "$source_dir"/* "$backup_dir_with_timestamp"
+    
+    # Display a message indicating the backup process is complete
+    echo "Backup completed. Files copied to: $backup_dir_with_timestamp"
+
+The output:
+![numeric](https://github.com/naqeebghazi/darey.shellscripting/blob/main/images/backup.png?raw=true)
+
