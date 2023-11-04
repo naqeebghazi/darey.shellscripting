@@ -136,4 +136,6 @@ Allows you to handle input/output i.e. accept user input and output related text
     echo "Files in the current directory:"
     ls
 
+This is what the output lookds like:
+![Images](https://github.com/naqeebghazi/darey.shellscripting/blob/main/images/Screenshot%202023-11-04%20at%2021.55.59.png?raw=true)
 
