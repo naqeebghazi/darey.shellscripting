@@ -136,6 +136,38 @@ Allows you to handle input/output i.e. accept user input and output related text
     echo "Files in the current directory:"
     ls
 
-This is what the output lookds like:
+This is what the output looks like:
 ![Images](https://github.com/naqeebghazi/darey.shellscripting/blob/main/images/Screenshot%202023-11-04%20at%2021.55.59.png?raw=true)
 
+## Working with numbers
+
+    # Define two variables with numeric values
+    num1=99
+    num2=66
+    
+    # Perform basic arithmetic operations
+    sum=$((num1 + num2))
+    difference=$((num1 - num2))
+    product=$((num1 * num2))
+    quotient=$((num1 / num2))
+    remainder=$((num1 % num2))
+    
+    # Display the results
+    echo "Number 1: $num1"
+    echo "Number 2: $num2"
+    echo "Sum: $sum"
+    echo "Difference: $difference"
+    echo "Product: $product"
+    echo "Quotient: $quotient"
+    echo "Remainder: $remainder"
+    
+    # Perform some more complex calculations
+    power_of_2=$((num1 ** 2))
+    square_root=$(awk "BEGIN{ sqrt=$num2; print sqrt }")
+    
+    # Display the results
+    echo "Number 1 raised to the power of 2: $power_of_2"
+    echo "Square root of number 2: $square_root"
+
+The output:
+![numeric](https://github.com/naqeebghazi/darey.shellscripting/blob/main/images/numeric.png?raw=true)
