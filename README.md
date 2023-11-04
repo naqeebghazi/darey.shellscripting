@@ -96,8 +96,7 @@ Allows you to handle input/output i.e. accept user input and output related text
     greet "Naqeeb"
 
 ## Creating our first BASH script:
-This creates a directory with two files in it then removes them while echoing every step of the script process
-
+ 
     #!/bin/bash
     
     # Display current directory
