@@ -1,4 +1,4 @@
-# !/bin/bash
+#!/bin/bash
 
 # echo "Welcome to Linux"
 
@@ -248,8 +248,6 @@
 
 #This creates a directory with two files in it then removes them while echoing every step of the script process
 
-#!/bin/bash
-
 # # Display current directory
 # echo "Current directory: $PWD"
 
@@ -292,83 +290,77 @@
 
 # File operations and sorting
 
-# #!/bin/bash
-
 # Create three files
-echo "Creating files..."
-echo "This is file3." > file3.txt
-echo "This is file1." > file1.txt
-echo "This is file2." > file2.txt
-echo "Files created."
+# echo "Creating files..."
+# echo "This is file3." > file3.txt
+# echo "This is file1." > file1.txt
+# echo "This is file2." > file2.txt
+# echo "Files created."
 
-# Display the files in their current order
-echo "Files in their current order:"
-ls
+# # Display the files in their current order
+# echo "Files in their current order:"
+# ls
 
-# Sort the files alphabetically
-echo "Sorting files alphabetically..."
-ls | sort > sorted_files.txt
-echo "Files sorted."
+# # Sort the files alphabetically
+# echo "Sorting files alphabetically..."
+# ls | sort > sorted_files.txt
+# echo "Files sorted."
 
-# Display the sorted files
-echo "Sorted files:"
-cat sorted_files.txt
+# # Display the sorted files
+# echo "Sorted files:"
+# cat sorted_files.txt
 
-# Remove the original files
-echo "Removing original files..."
-rm file1.txt file2.txt file3.txt
-echo "Original files removed."
+# # Remove the original files
+# echo "Removing original files..."
+# rm file1.txt file2.txt file3.txt
+# echo "Original files removed."
 
-# Rename the sorted file to a more descriptive name
-echo "Renaming sorted file..."
-mv sorted_files.txt sorted_files_sorted_alphabetically.txt
-echo "File renamed."
+# # Rename the sorted file to a more descriptive name
+# echo "Renaming sorted file..."
+# mv sorted_files.txt sorted_files_sorted_alphabetically.txt
+# echo "File renamed."
 
-# Display the final sorted file
-echo "Final sorted file:"
-cat sorted_files_sorted_alphabetically.txt
+# # Display the final sorted file
+# echo "Final sorted file:"
+# cat sorted_files_sorted_alphabetically.txt
 
 
 # ##############################################################
 
 # Working with numbers
 
-#!/bin/bash
+# Define two variables with numeric values
+num1=99
+num2=66
 
-# # Define two variables with numeric values
-# num1=10
-# num2=5
+# Perform basic arithmetic operations
+sum=$((num1 + num2))
+difference=$((num1 - num2))
+product=$((num1 * num2))
+quotient=$((num1 / num2))
+remainder=$((num1 % num2))
 
-# # Perform basic arithmetic operations
-# sum=$((num1 + num2))
-# difference=$((num1 - num2))
-# product=$((num1 * num2))
-# quotient=$((num1 / num2))
-# remainder=$((num1 % num2))
+# Display the results
+echo "Number 1: $num1"
+echo "Number 2: $num2"
+echo "Sum: $sum"
+echo "Difference: $difference"
+echo "Product: $product"
+echo "Quotient: $quotient"
+echo "Remainder: $remainder"
 
-# # Display the results
-# echo "Number 1: $num1"
-# echo "Number 2: $num2"
-# echo "Sum: $sum"
-# echo "Difference: $difference"
-# echo "Product: $product"
-# echo "Quotient: $quotient"
-# echo "Remainder: $remainder"
+# Perform some more complex calculations
+power_of_2=$((num1 ** 2))
+square_root=$(awk "BEGIN{ sqrt=$num2; print sqrt }")
 
-# # Perform some more complex calculations
-# power_of_2=$((num1 ** 2))
-# square_root=$(awk "BEGIN{ sqrt=$num2; print sqrt }")
-
-# # Display the results
-# echo "Number 1 raised to the power of 2: $power_of_2"
-# echo "Square root of number 2: $square_root"
+# Display the results
+echo "Number 1 raised to the power of 2: $power_of_2"
+echo "Square root of number 2: $square_root"
 
 
 # # ##############################################################
 
 # # File Backup
-
-# #!/bin/bash
 
 # # Define the source directory and backup directory
 # source_dir="/path/to/source_directory"
