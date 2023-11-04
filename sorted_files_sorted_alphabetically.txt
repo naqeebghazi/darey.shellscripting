@@ -1,0 +1,8 @@
+README.md
+bashscriptexample.sh
+file1.txt
+file2.txt
+file3.txt
+images
+index.txt
+sorted_files.txt
